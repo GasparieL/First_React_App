@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Introduction } from './components/IntroductionComponent';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <Introduction foo={5}/>
+        <Introduction foo = {3} />
+
       </header>
     </div>
   );
