@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import { Introduction } from './components/IntroductionComponent';
+import React,  {useState} from "react"
+
 
 function App() {
+  let [nameInput, setNameInput] = useState("");
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,9 +20,12 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-        <Introduction foo={5}/>
-        <Introduction foo = {3} />
+        </a> */}
+        <Introduction setName = {setNameInput}/>
+        {nameInput}
+        
+        {/* <Introduction foo={5}/>
+        <Introduction foo = {3} /> */}
 
       </header>
     </div>
